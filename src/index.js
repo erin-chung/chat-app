@@ -80,6 +80,9 @@ io.on('connection', (socket) => { //this function runs for each client (socket)
 })
 
 
-server.listen(port, ()=> {
-    console.log(`Server is up on port ${port}!`)
+
+server.listen(port, (error)=> {
+    console.log(`Server is up on port ${port}!`,
+    error
+    )
 })
